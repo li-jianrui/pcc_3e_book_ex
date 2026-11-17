@@ -1,0 +1,18 @@
+from random import randint
+
+class Die:
+    def __init__(self, sides=6):
+        self.sides = sides
+
+    def roll_die(self):
+        side_num = randint(1, self.sides)
+        print(f"The {self.sides}-sided die rolled a {side_num}")
+
+die_6_sides = Die()
+die_6_sides.roll_die()
+
+die_10_sides = Die(10)
+die_10_sides.roll_die()
+
+die_20_sides = Die(20)
+die_20_sides.roll_die()
